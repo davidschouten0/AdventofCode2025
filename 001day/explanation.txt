@@ -1,0 +1,25 @@
+Part 1:
+
+    Parse Instructions,
+        when R - add amount
+        when L - subtract amount
+
+    Use modulo (actually floorMod, to account for negative mods)
+
+    After one Instruction, check if Dial is at 0 (increase counter)
+
+Part 2:
+
+    Parse like before
+
+    3 Cases:
+        A) Doesnt point to 0 (-> curDial-curAmount >= 0 || curDial+curAmount <= 100)
+
+        B) Underflow ((curDial - curAmount / 100) + 1)    Only happens with L
+
+        C) Overflow (use Integer Division, like curDial+curAmount / 100)  Only happens with R
+
+    Use same modulo logic to get the next curDial
+
+    Challenge:  Handle starting from 0 correctly
+                Forgetting, that -x/+y = -z lol

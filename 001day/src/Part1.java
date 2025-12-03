@@ -3,7 +3,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.List;
 
-public class Main {
+public class Part1 {
     public static void main(String[] args) {
         Path path = Path.of("001day/reqs.txt");
         int numberOnTheDial = 50; //starts out at 50
