@@ -1,0 +1,12 @@
+Part 1:
+    Iterate over every sequence, seperated by ','
+
+    Possibility A)
+        count over the sequence range, if an ID is of the schema aa with a being half of the ID
+        --> increase counter
+
+    Possibility B)
+        Do the same thing but start a hashmap for every part sequence, so numbers from e.g. 10 to 100
+        have a given amount of repetitions, makes for more efficiency, no need to compute the same thing twice
+
+    I will go with Possibility A) for times sake
