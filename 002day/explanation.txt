@@ -10,3 +10,18 @@ Part 1:
         have a given amount of repetitions, makes for more efficiency, no need to compute the same thing twice
 
     I will go with Possibility A) for times sake
+
+
+Part 2:
+    Do same thing as before, change the check whether an ID is invalid
+
+    Instead of splitting the number down the middle, we have to "Faktorzerlegung"
+
+    An ID of length 12 can be split in different ways:
+        2 Parts of length 6     --> 2*6 = 12
+        6 Parts of length 2
+        3 Parts of length 4     --> 3*4 = 12
+        4 Parts of length 3
+
+    In Implementation we will approach this problem more straightforward
+        --> Count from 2 till n (n being the length), check if n%i == 0, if yes, split string in i parts
