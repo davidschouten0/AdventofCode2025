@@ -1,0 +1,14 @@
+Part 1:
+    Intuition: Iterate over the lines, interpreted as a 2-dimensional array, and check for surrounding '@'
+
+    Possible efficiency improvements: Second array that keeps tracks of indirectly known counts:
+
+        meaning: If an index is surrounded by 8 paperrolls, the bottom right position must at least have 2 surrounding
+            paperrolls, so you dont have to recalculate the left and upper positon.
+        problem: You might count them twice without a clear structure on which ones you may ignore
+
+        How to implement this? Recurse over 2d array not as singular indexes but as a 3x3 grid while saving some
+            information on the whole bottom row, and the sides of the 3x3
+
+Part 2:
+    Do Part 1, until no progress is being made anymore
