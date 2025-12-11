@@ -1,0 +1,27 @@
+Part 1:
+    binary poitner approach:
+        left pointer: first number
+        right pointer: second number
+
+        iterate till n-2
+
+        Possibility A)
+            if the second number > first number, switch numbers, make second number = 0
+
+        Possibiliy B)
+            Iterate over array once to get biggest num, note index
+            Iterate over arry again to get biggest num after the noted index
+
+        after Iteration, add the total of the line to the return
+
+    Challenges:
+        char is a number, need to offset 48 because 0 is 48 in ASCII
+
+Part 2:
+    Same kind of approach:
+    Look for the biggest number in the subarray [0;n-12] (with n being the length of the array)
+    Note the index k
+    look for biggest number in subarray [k; n-11]
+
+    continue this for all 12 numbers
+    multiply by 10^the place of the number (starting from zero, going to 11)
