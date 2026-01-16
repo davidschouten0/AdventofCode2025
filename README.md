@@ -16,7 +16,7 @@ The project is organized by day. Each day has its own package (e.g., `001Day`, `
 
 1.  **Clone the repo:**
     ```bash
-    git clone [https://github.com/davidschouten0/AdventOfCode2025.git](https://github.com/davidschouten0/AdventOfCode2025.git)
+    git clone https://github.com/davidschouten0/AdventOfCode2025.git
     ```
 2.  **Open in your IDE:** (IntelliJ IDEA is recommended).
 3.  **Run:** Navigate to the specific day's package and run the `main` method.
